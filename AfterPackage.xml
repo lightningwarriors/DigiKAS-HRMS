@@ -1,45 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-<types>
-    <members>DigiKAS_HRMS</members>
-    <name>CustomApplication</name>
-</types>
-<types>
-			<members>DigiKAS_UtilityBar</members>
-			<name>FlexiPage</name>
-</types>
-<types>
-    <members>Leave_Type__c</members>
-    <members>Employee__c</members>
-    <members>Leave_Request__c</members>
-    <members>Payroll__c</members>
-    <members>Department__c</members>
-    <name>CustomObject</name>
-</types>
-<types>
-    <members>Department__c</members>
-    <members>Employee__c</members>
-    <members>Leave_Request__c</members>
-    <members>Leave_Type__c</members>
-    <members>Payroll__c</members>
-    <name>CustomTab</name>
-</types>
-<types>
-    <members>croppeddigikas1</members>
-    <name>ContentAsset</name>
-</types>
-<types>
-    <members>Employee__c.Phone_number</members>
-</types>
+   
+    <types>
+        <members>Slack_Settings__mdt.Manager_Slack_ID__c</members>
+        <members>Slack_Settings__mdt.Webhook_Path__c</members>
+        <name>CustomField</name>
+    </types>
 
-<types>
-    <members>Employee__c.Phone_number</members>
-    <name>DuplicateRule</name>
-</types>
-<types>
-    <members>Employee__c.Phone_number</members>
-    <name>MatchingRule</name>
-</types>
+    <types>
+        <members>Slack_Settings.Default</members>
+        <members>Slack_Settings.Main</members>
+        <name>CustomMetadata</name>
+    </types>
 
-<version>64.0</version>
+    <types>
+        <members>Department__c</members>
+        <members>Employee__c</members>
+        <members>Leave_Request__c</members>
+        <members>Leave_Type__c</members>
+        <members>Payroll__c</members>
+        <members>Slack_Settings__mdt</members>
+        <members>Slack__mdt</members>
+        <members>Webhook_Path__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        
+        <members>Slack_Settings__mdt-en_US</members>
+        <members>Slack__mdt-en_US</members>
+        <members>Webhook_Path__mdt-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+   
+    <types>
+        <members>Department__c</members>
+        <members>Employee__c</members>
+        <members>Leave_Request__c</members>
+        <members>Leave_Type__c</members>
+        <members>Payroll__c</members>
+        <name>CustomTab</name>
+    </types>
+    
+    <types>
+        <members>Account.Standard_Account_Duplicate_Rule</members>
+        <members>Contact.Standard_Contact_Duplicate_Rule</members>
+        <members>Employee__c.Phone_number</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>unfiled$public/Approved_Mail</members>
+        <members>unfiled$public/Leave_Rejection</members>
+        <members>unfiled$public/Leave_Request_Approval_to_manager</members>
+        <name>EmailTemplate</name>
+    </types>
+
+    <types>
+        <members>SlackWebhook</members>
+       <name>ExternalCredential</name>
+    </types>
+
+
+    <types>
+        <members>Apply_Leave</members>
+        <members>Submit_For_Manager_Approval</members>
+        <members>Submit_for_Approval_2</members>
+        <name>Flow</name>
+    </types>
+   
+    <types>
+        <members>Employee__c.Phone_number</members>
+        <name>MatchingRule</name>
+    </types>
+
+    <types>
+        <members>Employee__c</members>
+        <name>MatchingRules</name>
+    </types>
+    
+    <types>
+        <members>SlackWebhook</members>
+        <members>Twilio</members>
+        <name>NamedCredential</name>
+    </types>
+
+    <types>
+        <members>Department__c</members>
+        <members>Employee__c</members>
+        <members>Leave_Request__c</members>
+        <members>Leave_Type__c</members>
+        <members>Payroll__c</members>
+        <name>TopicsForObjects</name>
+    </types>
+   
+    <types>
+        <members>Employee__c.Age_Limit</members>
+        <members>Employee__c.Date_of_Birth</members>
+        <members>Employee__c.Phone_Number_limit</members>
+        <members>Leave_Request__c.Earned_leave_Access</members>
+        <members>Leave_Request__c.Earned_leave_limit</members>
+        <members>Leave_Request__c.Past_Date_Validation</members>
+        <members>Leave_Request__c.Start_Date_Validation</members>
+        <name>ValidationRule</name>
+    </types>
+
+	<types>
+        <members>PayrollBatch</members>
+        <members>PayrollScheduler</members>
+        <members>PayrollTriggerHandler</members>
+        <members>LeaveUpdateHelper</members>
+        <members>SlackNotifier</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>LeaveRequestPayrollTrigger</members>
+        <members>LeaveRequestTrigger</members>
+        <members>PayrollTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <version>62.0</version>
 </Package>
